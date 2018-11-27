@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>fun</title>
+	</head>
+	<body>
+	<button onclick = "myFunction()"> Hellwo world </button>
+		<P id = "browser name"> stuff </p>
+		<img onclick = "lightSwitch()" id = "light"   src = "light_off.png" style="width:100px"> 
+
+		<script>
+			function myFunction()
+			{
+					document.getElementById("browser name").innerHTML = navigator.appName;
+					
+			}
+			function lightSwitch()
+			{
+				
+					var light = document.getElementById("light").src;
+
+					if(light == "file:///C:/Users/Jacob%20Parsons/Desktop/light_on.jpg")
+					{
+						document.getElementById("light").src = "light_off.png";
+					}
+					else
+					{
+						document.getElementById("light").src = "light_on.jpg";
+
+					}
+				
+			}
+			
+		</script>
+	</body>
+</html>
